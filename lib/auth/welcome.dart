@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/auth/phone%20number.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -75,7 +76,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ],
             ),
             MaterialButton(
-              onPressed: (){},
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> PhoneNumber() ));
+              },
               child: Container(
                 width: MediaQuery.of(context).size.width*0.8,
                 height: 60,
